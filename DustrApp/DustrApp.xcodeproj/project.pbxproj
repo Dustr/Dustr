@@ -1,0 +1,547 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB467E121F0F328000C33CD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB467E111F0F328000C33CD1 /* AppDelegate.swift */; };
+		BB467E141F0F328000C33CD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB467E131F0F328000C33CD1 /* ViewController.swift */; };
+		BB467E171F0F328000C33CD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB467E151F0F328000C33CD1 /* Main.storyboard */; };
+		BB467E1A1F0F328000C33CD1 /* DustrApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BB467E181F0F328000C33CD1 /* DustrApp.xcdatamodeld */; };
+		BB467E1C1F0F328000C33CD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB467E1B1F0F328000C33CD1 /* Assets.xcassets */; };
+		BB467E1F1F0F328000C33CD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB467E1D1F0F328000C33CD1 /* LaunchScreen.storyboard */; };
+		BB467E2A1F0F328000C33CD1 /* DustrAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB467E291F0F328000C33CD1 /* DustrAppTests.swift */; };
+		BB467E351F0F328000C33CD1 /* DustrAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB467E341F0F328000C33CD1 /* DustrAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB467E261F0F328000C33CD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB467E061F0F328000C33CD1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB467E0D1F0F328000C33CD1;
+			remoteInfo = DustrApp;
+		};
+		BB467E311F0F328000C33CD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB467E061F0F328000C33CD1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB467E0D1F0F328000C33CD1;
+			remoteInfo = DustrApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BB467E0E1F0F328000C33CD1 /* DustrApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DustrApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB467E111F0F328000C33CD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BB467E131F0F328000C33CD1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BB467E161F0F328000C33CD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BB467E191F0F328000C33CD1 /* DustrApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DustrApp.xcdatamodel; sourceTree = "<group>"; };
+		BB467E1B1F0F328000C33CD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB467E1E1F0F328000C33CD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BB467E201F0F328000C33CD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB467E251F0F328000C33CD1 /* DustrAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DustrAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB467E291F0F328000C33CD1 /* DustrAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DustrAppTests.swift; sourceTree = "<group>"; };
+		BB467E2B1F0F328000C33CD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB467E301F0F328000C33CD1 /* DustrAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DustrAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB467E341F0F328000C33CD1 /* DustrAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DustrAppUITests.swift; sourceTree = "<group>"; };
+		BB467E361F0F328000C33CD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB467E0B1F0F328000C33CD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB467E221F0F328000C33CD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB467E2D1F0F328000C33CD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB467E051F0F328000C33CD1 = {
+			isa = PBXGroup;
+			children = (
+				BB467E101F0F328000C33CD1 /* DustrApp */,
+				BB467E281F0F328000C33CD1 /* DustrAppTests */,
+				BB467E331F0F328000C33CD1 /* DustrAppUITests */,
+				BB467E0F1F0F328000C33CD1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB467E0F1F0F328000C33CD1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB467E0E1F0F328000C33CD1 /* DustrApp.app */,
+				BB467E251F0F328000C33CD1 /* DustrAppTests.xctest */,
+				BB467E301F0F328000C33CD1 /* DustrAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB467E101F0F328000C33CD1 /* DustrApp */ = {
+			isa = PBXGroup;
+			children = (
+				BB467E111F0F328000C33CD1 /* AppDelegate.swift */,
+				BB467E131F0F328000C33CD1 /* ViewController.swift */,
+				BB467E151F0F328000C33CD1 /* Main.storyboard */,
+				BB467E1B1F0F328000C33CD1 /* Assets.xcassets */,
+				BB467E1D1F0F328000C33CD1 /* LaunchScreen.storyboard */,
+				BB467E201F0F328000C33CD1 /* Info.plist */,
+				BB467E181F0F328000C33CD1 /* DustrApp.xcdatamodeld */,
+			);
+			path = DustrApp;
+			sourceTree = "<group>";
+		};
+		BB467E281F0F328000C33CD1 /* DustrAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				BB467E291F0F328000C33CD1 /* DustrAppTests.swift */,
+				BB467E2B1F0F328000C33CD1 /* Info.plist */,
+			);
+			path = DustrAppTests;
+			sourceTree = "<group>";
+		};
+		BB467E331F0F328000C33CD1 /* DustrAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BB467E341F0F328000C33CD1 /* DustrAppUITests.swift */,
+				BB467E361F0F328000C33CD1 /* Info.plist */,
+			);
+			path = DustrAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB467E0D1F0F328000C33CD1 /* DustrApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB467E391F0F328000C33CD1 /* Build configuration list for PBXNativeTarget "DustrApp" */;
+			buildPhases = (
+				BB467E0A1F0F328000C33CD1 /* Sources */,
+				BB467E0B1F0F328000C33CD1 /* Frameworks */,
+				BB467E0C1F0F328000C33CD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DustrApp;
+			productName = DustrApp;
+			productReference = BB467E0E1F0F328000C33CD1 /* DustrApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB467E241F0F328000C33CD1 /* DustrAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB467E3C1F0F328000C33CD1 /* Build configuration list for PBXNativeTarget "DustrAppTests" */;
+			buildPhases = (
+				BB467E211F0F328000C33CD1 /* Sources */,
+				BB467E221F0F328000C33CD1 /* Frameworks */,
+				BB467E231F0F328000C33CD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB467E271F0F328000C33CD1 /* PBXTargetDependency */,
+			);
+			name = DustrAppTests;
+			productName = DustrAppTests;
+			productReference = BB467E251F0F328000C33CD1 /* DustrAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BB467E2F1F0F328000C33CD1 /* DustrAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB467E3F1F0F328000C33CD1 /* Build configuration list for PBXNativeTarget "DustrAppUITests" */;
+			buildPhases = (
+				BB467E2C1F0F328000C33CD1 /* Sources */,
+				BB467E2D1F0F328000C33CD1 /* Frameworks */,
+				BB467E2E1F0F328000C33CD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB467E321F0F328000C33CD1 /* PBXTargetDependency */,
+			);
+			name = DustrAppUITests;
+			productName = DustrAppUITests;
+			productReference = BB467E301F0F328000C33CD1 /* DustrAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB467E061F0F328000C33CD1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Dustr;
+				TargetAttributes = {
+					BB467E0D1F0F328000C33CD1 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+					BB467E241F0F328000C33CD1 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BB467E0D1F0F328000C33CD1;
+					};
+					BB467E2F1F0F328000C33CD1 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BB467E0D1F0F328000C33CD1;
+					};
+				};
+			};
+			buildConfigurationList = BB467E091F0F328000C33CD1 /* Build configuration list for PBXProject "DustrApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB467E051F0F328000C33CD1;
+			productRefGroup = BB467E0F1F0F328000C33CD1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB467E0D1F0F328000C33CD1 /* DustrApp */,
+				BB467E241F0F328000C33CD1 /* DustrAppTests */,
+				BB467E2F1F0F328000C33CD1 /* DustrAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB467E0C1F0F328000C33CD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB467E1F1F0F328000C33CD1 /* LaunchScreen.storyboard in Resources */,
+				BB467E1C1F0F328000C33CD1 /* Assets.xcassets in Resources */,
+				BB467E171F0F328000C33CD1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB467E231F0F328000C33CD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB467E2E1F0F328000C33CD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB467E0A1F0F328000C33CD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB467E141F0F328000C33CD1 /* ViewController.swift in Sources */,
+				BB467E1A1F0F328000C33CD1 /* DustrApp.xcdatamodeld in Sources */,
+				BB467E121F0F328000C33CD1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB467E211F0F328000C33CD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB467E2A1F0F328000C33CD1 /* DustrAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB467E2C1F0F328000C33CD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB467E351F0F328000C33CD1 /* DustrAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB467E271F0F328000C33CD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB467E0D1F0F328000C33CD1 /* DustrApp */;
+			targetProxy = BB467E261F0F328000C33CD1 /* PBXContainerItemProxy */;
+		};
+		BB467E321F0F328000C33CD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB467E0D1F0F328000C33CD1 /* DustrApp */;
+			targetProxy = BB467E311F0F328000C33CD1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BB467E151F0F328000C33CD1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB467E161F0F328000C33CD1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BB467E1D1F0F328000C33CD1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB467E1E1F0F328000C33CD1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB467E371F0F328000C33CD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BB467E381F0F328000C33CD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB467E3A1F0F328000C33CD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DustrApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DustrApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BB467E3B1F0F328000C33CD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DustrApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DustrApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		BB467E3D1F0F328000C33CD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DustrAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DustrAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DustrApp.app/DustrApp";
+			};
+			name = Debug;
+		};
+		BB467E3E1F0F328000C33CD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DustrAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DustrAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DustrApp.app/DustrApp";
+			};
+			name = Release;
+		};
+		BB467E401F0F328000C33CD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = DustrAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DustrAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = DustrApp;
+			};
+			name = Debug;
+		};
+		BB467E411F0F328000C33CD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = DustrAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DustrAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = DustrApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB467E091F0F328000C33CD1 /* Build configuration list for PBXProject "DustrApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB467E371F0F328000C33CD1 /* Debug */,
+				BB467E381F0F328000C33CD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB467E391F0F328000C33CD1 /* Build configuration list for PBXNativeTarget "DustrApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB467E3A1F0F328000C33CD1 /* Debug */,
+				BB467E3B1F0F328000C33CD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BB467E3C1F0F328000C33CD1 /* Build configuration list for PBXNativeTarget "DustrAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB467E3D1F0F328000C33CD1 /* Debug */,
+				BB467E3E1F0F328000C33CD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BB467E3F1F0F328000C33CD1 /* Build configuration list for PBXNativeTarget "DustrAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB467E401F0F328000C33CD1 /* Debug */,
+				BB467E411F0F328000C33CD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BB467E181F0F328000C33CD1 /* DustrApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BB467E191F0F328000C33CD1 /* DustrApp.xcdatamodel */,
+			);
+			currentVersion = BB467E191F0F328000C33CD1 /* DustrApp.xcdatamodel */;
+			path = DustrApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BB467E061F0F328000C33CD1 /* Project object */;
+}

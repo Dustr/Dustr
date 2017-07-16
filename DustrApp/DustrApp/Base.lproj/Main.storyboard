@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DustrApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,50 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mNh-NU-I77">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="393"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ya0-Zl-KMt">
+                                <rect key="frame" x="138" y="517" width="98" height="30"/>
+                                <state key="normal" title="importChoose"/>
+                                <connections>
+                                    <action selector="addPhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hrh-R7-OjB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FK4-gj-cUw">
+                                <rect key="frame" x="165" y="572" width="45" height="30"/>
+                                <state key="normal" title="Delete"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jU1-up-eX7">
+                                <rect key="frame" x="140" y="469" width="94" height="30"/>
+                                <state key="normal" title="importStream"/>
+                                <connections>
+                                    <action selector="fetchStream:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kw8-wv-5Ou"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FK4-gj-cUw" firstAttribute="top" secondItem="ya0-Zl-KMt" secondAttribute="bottom" constant="25" id="6iE-ff-IV9"/>
+                            <constraint firstAttribute="trailing" secondItem="mNh-NU-I77" secondAttribute="trailing" id="E3C-fH-yjx"/>
+                            <constraint firstItem="ya0-Zl-KMt" firstAttribute="top" secondItem="jU1-up-eX7" secondAttribute="bottom" constant="18" id="ISR-9E-r6u"/>
+                            <constraint firstItem="mNh-NU-I77" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="PIE-xk-zUD"/>
+                            <constraint firstItem="jU1-up-eX7" firstAttribute="centerX" secondItem="ya0-Zl-KMt" secondAttribute="centerX" id="QKT-Jq-jfM"/>
+                            <constraint firstItem="ya0-Zl-KMt" firstAttribute="centerX" secondItem="FK4-gj-cUw" secondAttribute="centerX" id="S70-W5-BLm"/>
+                            <constraint firstItem="mNh-NU-I77" firstAttribute="centerX" secondItem="jU1-up-eX7" secondAttribute="centerX" id="UYD-BQ-PKr"/>
+                            <constraint firstItem="jU1-up-eX7" firstAttribute="top" secondItem="mNh-NU-I77" secondAttribute="bottom" constant="76" id="auK-C0-Gda"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FK4-gj-cUw" secondAttribute="bottom" constant="65" id="nyk-Iy-nay"/>
+                            <constraint firstItem="mNh-NU-I77" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="rvq-M2-l2K"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="currentImage" destination="mNh-NU-I77" id="Uh7-F4-Ftf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="93.103448275862078"/>
         </scene>
     </scenes>
 </document>

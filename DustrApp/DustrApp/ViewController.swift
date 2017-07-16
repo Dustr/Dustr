@@ -18,6 +18,10 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     
     @IBOutlet weak var currentImage: UIImageView!
    
+    @IBAction func stream(_ sender: Any) {
+        currentImage.image = imgArray[index%imgArray.count]
+        index += 1
+    }
     
     @IBAction func addPhoto(_ sender: Any) {
         let image = UIImagePickerController()
@@ -64,12 +68,6 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     }
     
     
-    @IBAction func nextPhoto(_ sender: Any) {
-        currentImage.image = imgArray[index]
-        index += 1
-        
-        
-    }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {

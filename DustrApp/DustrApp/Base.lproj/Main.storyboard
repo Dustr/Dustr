@@ -39,7 +39,7 @@
                                 <rect key="frame" x="140" y="469" width="94" height="30"/>
                                 <state key="normal" title="importStream"/>
                                 <connections>
-                                    <action selector="fetchStream:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kw8-wv-5Ou"/>
+                                    <action selector="stream:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s5t-tX-cDn"/>
                                 </connections>
                             </button>
                         </subviews>

@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		255AC81636823508014E2DCA /* Pods_DustrApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA645AB4C15DBD84E3121E8 /* Pods_DustrApp.framework */; };
+		287224481F1C22E500D5B837 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2872244A1F1C22E500D5B837 /* LaunchScreen.xib */; };
+		2872244C1F1C23E200D5B837 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2872244B1F1C23E200D5B837 /* Images.xcassets */; };
+		2872244F1F1C295700D5B837 /* OverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 287224511F1C295700D5B837 /* OverlayView.xib */; };
+		287224531F1C29BD00D5B837 /* DustrOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287224521F1C29BD00D5B837 /* DustrOverlayView.swift */; };
+		AFE5A84A14082A00C02050D8 /* Pods_DustrAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5C453461E72518302CEE6E /* Pods_DustrAppUITests.framework */; };
 		BB467E121F0F328000C33CD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB467E111F0F328000C33CD1 /* AppDelegate.swift */; };
 		BB467E141F0F328000C33CD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB467E131F0F328000C33CD1 /* ViewController.swift */; };
 		BB467E171F0F328000C33CD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB467E151F0F328000C33CD1 /* Main.storyboard */; };
 		BB467E1A1F0F328000C33CD1 /* DustrApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BB467E181F0F328000C33CD1 /* DustrApp.xcdatamodeld */; };
 		BB467E1C1F0F328000C33CD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB467E1B1F0F328000C33CD1 /* Assets.xcassets */; };
-		BB467E1F1F0F328000C33CD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB467E1D1F0F328000C33CD1 /* LaunchScreen.storyboard */; };
 		BB467E2A1F0F328000C33CD1 /* DustrAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB467E291F0F328000C33CD1 /* DustrAppTests.swift */; };
 		BB467E351F0F328000C33CD1 /* DustrAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB467E341F0F328000C33CD1 /* DustrAppUITests.swift */; };
+		DAE7ED0081888D91DB9A5DFA /* Pods_DustrAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7D388CC9CE57A9D53F0FDAB /* Pods_DustrAppTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,13 +41,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		278A6F4D0CAD00D6EBC8ECD0 /* Pods-DustrApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DustrApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-DustrApp/Pods-DustrApp.release.xcconfig"; sourceTree = "<group>"; };
+		287224491F1C22E500D5B837 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		2872244B1F1C23E200D5B837 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		287224501F1C295700D5B837 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/OverlayView.xib; sourceTree = "<group>"; };
+		287224521F1C29BD00D5B837 /* DustrOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DustrOverlayView.swift; sourceTree = "<group>"; };
+		3E0D364C1E665C1D5EB88670 /* Pods-DustrAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DustrAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DustrAppUITests/Pods-DustrAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4AA645AB4C15DBD84E3121E8 /* Pods_DustrApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DustrApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		720182A6713AE7F8A731D68F /* Pods-DustrAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DustrAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DustrAppTests/Pods-DustrAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		9AE5366CFD0D595ADC3DF8F9 /* Pods-DustrAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DustrAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DustrAppUITests/Pods-DustrAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BB467E0E1F0F328000C33CD1 /* DustrApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DustrApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB467E111F0F328000C33CD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB467E131F0F328000C33CD1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BB467E161F0F328000C33CD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BB467E191F0F328000C33CD1 /* DustrApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DustrApp.xcdatamodel; sourceTree = "<group>"; };
 		BB467E1B1F0F328000C33CD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		BB467E1E1F0F328000C33CD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB467E201F0F328000C33CD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB467E251F0F328000C33CD1 /* DustrAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DustrAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB467E291F0F328000C33CD1 /* DustrAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DustrAppTests.swift; sourceTree = "<group>"; };
@@ -49,6 +63,10 @@
 		BB467E301F0F328000C33CD1 /* DustrAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DustrAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB467E341F0F328000C33CD1 /* DustrAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DustrAppUITests.swift; sourceTree = "<group>"; };
 		BB467E361F0F328000C33CD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFCB51BCBEAEFCB806C3AB13 /* Pods-DustrAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DustrAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DustrAppTests/Pods-DustrAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CB5C453461E72518302CEE6E /* Pods_DustrAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DustrAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7D388CC9CE57A9D53F0FDAB /* Pods_DustrAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DustrAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD520FAFC6C35B7292E3465B /* Pods-DustrApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DustrApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DustrApp/Pods-DustrApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				255AC81636823508014E2DCA /* Pods_DustrApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAE7ED0081888D91DB9A5DFA /* Pods_DustrAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +90,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFE5A84A14082A00C02050D8 /* Pods_DustrAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B058450A0B8F8EC9AD0841D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4AA645AB4C15DBD84E3121E8 /* Pods_DustrApp.framework */,
+				F7D388CC9CE57A9D53F0FDAB /* Pods_DustrAppTests.framework */,
+				CB5C453461E72518302CEE6E /* Pods_DustrAppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BB467E051F0F328000C33CD1 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +114,8 @@
 				BB467E281F0F328000C33CD1 /* DustrAppTests */,
 				BB467E331F0F328000C33CD1 /* DustrAppUITests */,
 				BB467E0F1F0F328000C33CD1 /* Products */,
+				D8A188BAADDF661049D04701 /* Pods */,
+				6B058450A0B8F8EC9AD0841D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,11 +134,14 @@
 			children = (
 				BB467E111F0F328000C33CD1 /* AppDelegate.swift */,
 				BB467E131F0F328000C33CD1 /* ViewController.swift */,
+				287224521F1C29BD00D5B837 /* DustrOverlayView.swift */,
 				BB467E151F0F328000C33CD1 /* Main.storyboard */,
 				BB467E1B1F0F328000C33CD1 /* Assets.xcassets */,
-				BB467E1D1F0F328000C33CD1 /* LaunchScreen.storyboard */,
 				BB467E201F0F328000C33CD1 /* Info.plist */,
 				BB467E181F0F328000C33CD1 /* DustrApp.xcdatamodeld */,
+				287224511F1C295700D5B837 /* OverlayView.xib */,
+				2872244A1F1C22E500D5B837 /* LaunchScreen.xib */,
+				2872244B1F1C23E200D5B837 /* Images.xcassets */,
 			);
 			path = DustrApp;
 			sourceTree = "<group>";
@@ -128,6 +164,19 @@
 			path = DustrAppUITests;
 			sourceTree = "<group>";
 		};
+		D8A188BAADDF661049D04701 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD520FAFC6C35B7292E3465B /* Pods-DustrApp.debug.xcconfig */,
+				278A6F4D0CAD00D6EBC8ECD0 /* Pods-DustrApp.release.xcconfig */,
+				BFCB51BCBEAEFCB806C3AB13 /* Pods-DustrAppTests.debug.xcconfig */,
+				720182A6713AE7F8A731D68F /* Pods-DustrAppTests.release.xcconfig */,
+				3E0D364C1E665C1D5EB88670 /* Pods-DustrAppUITests.debug.xcconfig */,
+				9AE5366CFD0D595ADC3DF8F9 /* Pods-DustrAppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +184,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB467E391F0F328000C33CD1 /* Build configuration list for PBXNativeTarget "DustrApp" */;
 			buildPhases = (
+				E81C6994B0341806FD01764C /* [CP] Check Pods Manifest.lock */,
 				BB467E0A1F0F328000C33CD1 /* Sources */,
 				BB467E0B1F0F328000C33CD1 /* Frameworks */,
 				BB467E0C1F0F328000C33CD1 /* Resources */,
+				337749A15A42AFE540F5EFEE /* [CP] Embed Pods Frameworks */,
+				A944F0857C90030D50C60B64 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +204,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB467E3C1F0F328000C33CD1 /* Build configuration list for PBXNativeTarget "DustrAppTests" */;
 			buildPhases = (
+				64C89B9CCFD366A4D7441043 /* [CP] Check Pods Manifest.lock */,
 				BB467E211F0F328000C33CD1 /* Sources */,
 				BB467E221F0F328000C33CD1 /* Frameworks */,
 				BB467E231F0F328000C33CD1 /* Resources */,
+				6E0921B096BB10FB0FB9D8FA /* [CP] Embed Pods Frameworks */,
+				21902B167204706811AB8BA2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +225,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB467E3F1F0F328000C33CD1 /* Build configuration list for PBXNativeTarget "DustrAppUITests" */;
 			buildPhases = (
+				BD4D259FEF513AAD1A31DE7D /* [CP] Check Pods Manifest.lock */,
 				BB467E2C1F0F328000C33CD1 /* Sources */,
 				BB467E2D1F0F328000C33CD1 /* Frameworks */,
 				BB467E2E1F0F328000C33CD1 /* Resources */,
+				D4909924C4E0EC4C82BA2177 /* [CP] Embed Pods Frameworks */,
+				6CD8BD71D3A942F52229EB5B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -235,7 +293,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB467E1F1F0F328000C33CD1 /* LaunchScreen.storyboard in Resources */,
+				287224481F1C22E500D5B837 /* LaunchScreen.xib in Resources */,
+				2872244C1F1C23E200D5B837 /* Images.xcassets in Resources */,
+				2872244F1F1C295700D5B837 /* OverlayView.xib in Resources */,
 				BB467E1C1F0F328000C33CD1 /* Assets.xcassets in Resources */,
 				BB467E171F0F328000C33CD1 /* Main.storyboard in Resources */,
 			);
@@ -257,6 +317,144 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		21902B167204706811AB8BA2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DustrAppTests/Pods-DustrAppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		337749A15A42AFE540F5EFEE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DustrApp/Pods-DustrApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64C89B9CCFD366A4D7441043 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6CD8BD71D3A942F52229EB5B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DustrAppUITests/Pods-DustrAppUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E0921B096BB10FB0FB9D8FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DustrAppTests/Pods-DustrAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A944F0857C90030D50C60B64 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DustrApp/Pods-DustrApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD4D259FEF513AAD1A31DE7D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D4909924C4E0EC4C82BA2177 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DustrAppUITests/Pods-DustrAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E81C6994B0341806FD01764C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BB467E0A1F0F328000C33CD1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -265,6 +463,7 @@
 				BB467E141F0F328000C33CD1 /* ViewController.swift in Sources */,
 				BB467E1A1F0F328000C33CD1 /* DustrApp.xcdatamodeld in Sources */,
 				BB467E121F0F328000C33CD1 /* AppDelegate.swift in Sources */,
+				287224531F1C29BD00D5B837 /* DustrOverlayView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,20 +499,28 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		2872244A1F1C22E500D5B837 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				287224491F1C22E500D5B837 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		287224511F1C295700D5B837 /* OverlayView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				287224501F1C295700D5B837 /* Base */,
+			);
+			name = OverlayView.xib;
+			sourceTree = "<group>";
+		};
 		BB467E151F0F328000C33CD1 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				BB467E161F0F328000C33CD1 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		BB467E1D1F0F328000C33CD1 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BB467E1E1F0F328000C33CD1 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -416,6 +623,7 @@
 		};
 		BB467E3A1F0F328000C33CD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD520FAFC6C35B7292E3465B /* Pods-DustrApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DustrApp/Info.plist;
@@ -428,6 +636,7 @@
 		};
 		BB467E3B1F0F328000C33CD1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 278A6F4D0CAD00D6EBC8ECD0 /* Pods-DustrApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DustrApp/Info.plist;
@@ -440,6 +649,7 @@
 		};
 		BB467E3D1F0F328000C33CD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFCB51BCBEAEFCB806C3AB13 /* Pods-DustrAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -454,6 +664,7 @@
 		};
 		BB467E3E1F0F328000C33CD1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 720182A6713AE7F8A731D68F /* Pods-DustrAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -468,6 +679,7 @@
 		};
 		BB467E401F0F328000C33CD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E0D364C1E665C1D5EB88670 /* Pods-DustrAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = DustrAppUITests/Info.plist;
@@ -481,6 +693,7 @@
 		};
 		BB467E411F0F328000C33CD1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AE5366CFD0D595ADC3DF8F9 /* Pods-DustrAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = DustrAppUITests/Info.plist;
@@ -511,6 +724,7 @@
 				BB467E3B1F0F328000C33CD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BB467E3C1F0F328000C33CD1 /* Build configuration list for PBXNativeTarget "DustrAppTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +733,7 @@
 				BB467E3E1F0F328000C33CD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BB467E3F1F0F328000C33CD1 /* Build configuration list for PBXNativeTarget "DustrAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +742,7 @@
 				BB467E411F0F328000C33CD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -1,0 +1,6 @@
+framework module Pods_DustrAppUITests {
+  umbrella header "Pods-DustrAppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

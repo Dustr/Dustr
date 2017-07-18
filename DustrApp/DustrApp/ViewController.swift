@@ -16,6 +16,10 @@ class ViewController: UIViewController {
     
     fileprivate var dataSource = [UIImage]()
     
+    fileprivate var assetArray = [PHAsset]()
+    
+    fileprivate var deletionArray = [PHAsset]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         loadPhotos()
@@ -31,8 +35,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
     @IBAction func dLeftButtonTapped() {
         kolodaView?.swipe(.left)
+        //arrayToDelete.append(assetArray[kolodaView?.currentCardIndex])
     }
     
     @IBAction func dRightButtonTapped() {
@@ -48,7 +54,7 @@ class ViewController: UIViewController {
         let imagesManager = PHImageManager.default()
         
         let requestOptions = PHImageRequestOptions()
-        requestOptions.deliveryMode = .opportunistic
+        requestOptions.deliveryMode = .highQualityFormat
         requestOptions.isSynchronous = true
         
         let fetchOptions = PHFetchOptions()
@@ -58,7 +64,9 @@ class ViewController: UIViewController {
             // if there images
             if fetchResult.count > 0 {
                 for i in 0..<fetchResult.count {
-                    imagesManager.requestImage(for: fetchResult.object(at: i) as PHAsset, targetSize: CGSize(width:710 , height:800), contentMode: .aspectFit, options: requestOptions, resultHandler: {
+                    let currentimage = fetchResult.object(at: i)
+                    assetArray.append(currentimage)
+                    imagesManager.requestImage(for: currentimage as PHAsset, targetSize: CGSize(width: currentimage.pixelHeight, height: currentimage.pixelWidth), contentMode: .aspectFit, options: requestOptions, resultHandler: {
                         image, error in
                         self.dataSource.append(image!)
                     })
@@ -75,7 +83,6 @@ extension ViewController: KolodaViewDelegate {
     }
     
     func koloda(_ koloda: KolodaView, didSelectCardAt index: Int) {
-        //UIApplication.shared.open(URL(string: "https://yalantis.com/")!, options: [:], completionHandler: nil)
         let fullscreenPhoto = UIImageView(image: dataSource[Int(index)])
         let newImageView = UIImageView(image: fullscreenPhoto.image)
         newImageView.frame = UIScreen.main.bounds

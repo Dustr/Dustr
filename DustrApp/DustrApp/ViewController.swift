@@ -89,9 +89,12 @@ extension ViewController: KolodaViewDelegate {
                         print("There was an error")
                         self.reloadPhotos()
                     }
-            })
+                }
+            )
         }
-        
+        else {
+            kolodaView.resetCurrentCardIndex()
+        }
     }
     
     func koloda(_ koloda: KolodaView, didSelectCardAt index: Int) {

@@ -58,9 +58,7 @@
                                             <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="asdfasdf:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wDd-Pu-l7H"/>
                                             <action selector="dLeftButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="vNZ-12-PkB"/>
-                                            <action selector="dddd:forEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7X8-ov-uCB"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kgc-bh-X2U">

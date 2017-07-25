@@ -16,9 +16,9 @@ class ViewController: UIViewController {
     
     fileprivate var dataSource = [UIImage]()
     
-    fileprivate var assetArray = [PHAsset]()
+    fileprivate var currentAssetArray = [PHAsset]()
     
-    fileprivate var deletionArray = [PHAsset]()
+    fileprivate var deletionArray = NSMutableArray()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,8 +37,8 @@ class ViewController: UIViewController {
     
     
     @IBAction func dLeftButtonTapped() {
+        deletionArray.add(currentAssetArray[kolodaView!.currentCardIndex])
         kolodaView?.swipe(.left)
-        //arrayToDelete.append(assetArray[kolodaView?.currentCardIndex])
     }
     
     @IBAction func dRightButtonTapped() {
@@ -61,11 +61,10 @@ class ViewController: UIViewController {
         fetchOptions.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: true)]
         
         if let fetchResult: PHFetchResult = PHAsset.fetchAssets(with: .image, options: fetchOptions) {
-            // if there images
             if fetchResult.count > 0 {
                 for i in 0..<fetchResult.count {
                     let currentimage = fetchResult.object(at: i)
-                    assetArray.append(currentimage)
+                    currentAssetArray.append(currentimage)
                     imagesManager.requestImage(for: currentimage as PHAsset, targetSize: CGSize(width: currentimage.pixelHeight, height: currentimage.pixelWidth), contentMode: .aspectFit, options: requestOptions, resultHandler: {
                         image, error in
                         self.dataSource.append(image!)
@@ -79,7 +78,20 @@ class ViewController: UIViewController {
 extension ViewController: KolodaViewDelegate {
     
     func kolodaDidRunOutOfCards(_ koloda: KolodaView) {
-        kolodaView.resetCurrentCardIndex()
+        if (deletionArray.count > 0) {
+            PHPhotoLibrary.shared().performChanges( {
+                PHAssetChangeRequest.deleteAssets(self.deletionArray)},
+                completionHandler: {
+                    success, error in
+                    if(success) {
+                        self.reloadPhotos()
+                    } else{
+                        print("There was an error")
+                        self.reloadPhotos()
+                    }
+            })
+        }
+        
     }
     
     func koloda(_ koloda: KolodaView, didSelectCardAt index: Int) {
@@ -100,6 +112,14 @@ extension ViewController: KolodaViewDelegate {
         self.navigationController?.isNavigationBarHidden = false
         self.tabBarController?.tabBar.isHidden = false
         sender.view?.removeFromSuperview()
+    }
+    
+    func reloadPhotos() {
+        deletionArray.removeAllObjects()
+        currentAssetArray.removeAll()
+        dataSource.removeAll()
+        loadPhotos()
+        kolodaView.resetCurrentCardIndex()
     }
     
 }

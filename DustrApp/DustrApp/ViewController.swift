@@ -22,6 +22,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         loadPhotos()
         
         kolodaView.dataSource = self
@@ -50,6 +51,18 @@ class ViewController: UIViewController {
         kolodaView?.revertAction()
     }
     
+    @IBAction func shareImageButton(_ sender: UIButton) {
+        let image = dataSource[kolodaView!.currentCardIndex]
+        
+        let imageToShare = [image]
+        let activityViewController = UIActivityViewController(activityItems: imageToShare, applicationActivities: nil)
+        activityViewController.popoverPresentationController?.sourceView = self.view
+        
+        activityViewController.excludedActivityTypes = [ UIActivityType.saveToCameraRoll ]
+        
+        self.present(activityViewController, animated: true, completion: nil)
+    }
+    
     func loadPhotos() {
         let imagesManager = PHImageManager.default()
         
@@ -73,6 +86,30 @@ class ViewController: UIViewController {
             }
         }
     }
+    
+//    func checkPhotoLibraryPermission() {
+//        let status = PHPhotoLibrary.authorizationStatus()
+//        if (status == .authorized)
+//            loadPhotos()
+//        switch status {
+//        case .authorized:
+//        //handle authorized status
+//        case .denied, .restricted :
+//        //handle denied status
+//        case .notDetermined:
+//            // ask for permissions
+//            PHPhotoLibrary.requestAuthorization() { status in
+//                switch status {
+//                case .authorized:
+//                // as above
+//                case .denied, .restricted:
+//                // as above
+//                case .notDetermined:
+//                    // won't happen but still
+//                }
+//            }
+//        }
+//    }
 }
 
 extension ViewController: KolodaViewDelegate {

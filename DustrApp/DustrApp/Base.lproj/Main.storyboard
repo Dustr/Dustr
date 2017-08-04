@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17A306f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -20,17 +20,24 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ewp-Kj-H81">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tR0-s6-8ag">
-                                        <rect key="frame" x="330" y="33" width="30" height="30"/>
+                                        <rect key="frame" x="369" y="33" width="30" height="30"/>
                                         <state key="normal" title="U"/>
                                         <connections>
                                             <action selector="dUndoButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="nT9-Ng-Jb4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xgj-0U-fdJ">
+                                        <rect key="frame" x="15" y="33" width="40" height="30"/>
+                                        <state key="normal" title="Share"/>
+                                        <connections>
+                                            <action selector="shareImageButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2St-gP-kYI"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -38,18 +45,20 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="3ZH-J4-1W9"/>
                                     <constraint firstItem="tR0-s6-8ag" firstAttribute="top" secondItem="Ewp-Kj-H81" secondAttribute="top" constant="33" id="SKd-EF-1l2"/>
+                                    <constraint firstItem="xgj-0U-fdJ" firstAttribute="leading" secondItem="Ewp-Kj-H81" secondAttribute="leading" constant="15" id="YFT-Gm-3nF"/>
+                                    <constraint firstItem="xgj-0U-fdJ" firstAttribute="top" secondItem="Ewp-Kj-H81" secondAttribute="top" constant="33" id="ei8-fG-29H"/>
                                     <constraint firstAttribute="trailing" secondItem="tR0-s6-8ag" secondAttribute="trailing" constant="15" id="mxw-JK-PVQ"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hy4-7k-coe" customClass="KolodaView" customModule="Koloda">
-                                <rect key="frame" x="34" y="64" width="307" height="346"/>
+                                <rect key="frame" x="38" y="64" width="338" height="380.33333333333331"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Hy4-7k-coe" secondAttribute="height" multiplier="71:80" id="jMh-pn-3Bn"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XSF-wC-ygF">
-                                <rect key="frame" x="127.5" y="434" width="120" height="32"/>
+                                <rect key="frame" x="147" y="468.33333333333331" width="120" height="32"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BIv-Oy-MQi">
                                         <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
@@ -91,13 +100,15 @@
                             <constraint firstItem="Hy4-7k-coe" firstAttribute="top" secondItem="Ewp-Kj-H81" secondAttribute="bottom" id="yai-dq-Zcg"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="kolodaView" destination="Hy4-7k-coe" id="a51-g8-ufy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="101.5" y="136.5"/>
+            <point key="canvasLocation" x="101.44927536231884" y="136.14130434782609"/>
         </scene>
     </scenes>
 </document>

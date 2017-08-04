@@ -11,6 +11,7 @@ import UIKit
 class StackViewController: UIViewController {
 
     
+    
     @IBOutlet weak var headerLabel: UILabel!
     var headerString:String? {
         
@@ -24,12 +25,20 @@ class StackViewController: UIViewController {
         headerLabel.text = headerString
     }
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func inTap(_ sender: Any) {
+      
+        self.loadView()
+        
+    }
+  
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

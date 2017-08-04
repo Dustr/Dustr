@@ -11,18 +11,24 @@ import UIKit
 class ViewController: UIViewController, UICollisionBehaviorDelegate {
 
     let data = ["Photos", "Twitter", "Instagram"]
-    
+    var i = 0
     var views = [UIView]()
     var animator: UIDynamicAnimator?
     var gravity: UIGravityBehavior?
     var snap: UISnapBehavior?
     var prevTouchPoint: CGPoint?
+    var offset: CGFloat = 400
     var viewDragging = false
     var viewPinned = false
     
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        }
+
+    
+    @IBAction func addCard(_ sender: Any) {
         animator = UIDynamicAnimator(referenceView: self.view)
         gravity = UIGravityBehavior()
         
@@ -30,17 +36,19 @@ class ViewController: UIViewController, UICollisionBehaviorDelegate {
         animator?.addBehavior(gravity!)
         gravity?.magnitude = 1
         
-        var offset: CGFloat = 250
-        
-        for i in 0 ..< data.count {
+        if i < 3 {
             if let view = addViewController(atOffset: offset, dataForVC: data[i]) {
                 views.append(view)
-                offset -= 50
+                offset -= 75
+                i += 1
             }
         }
-        
-        }
 
+        
+        
+        
+    }
+    
     
     func addViewController (atOffset offset: CGFloat, dataForVC: String?) -> UIView? {
         
@@ -56,7 +64,7 @@ class ViewController: UIViewController, UICollisionBehaviorDelegate {
             view.layer.shadowRadius = 3
             view.layer.shadowOpacity = 0.5
             
-            if let headStr = data as? String {
+            if let headStr = dataForVC {
                 stackElementVC.headerString = headStr
             }
             
@@ -65,9 +73,14 @@ class ViewController: UIViewController, UICollisionBehaviorDelegate {
         self.addChildViewController(stackElementVC)
         self.view.addSubview(view)
         stackElementVC.didMove(toParentViewController: self)
+
+    
         
-        let panGesture = UIPanGestureRecognizer(target: self, action: #selector(ViewController.handlePan(gesture:)) )
+        /*let panGesture = UIPanGestureRecognizer(target: self, action: #selector(ViewController.handlePan(gesture:)) )
         view.addGestureRecognizer(panGesture)
+ */
+            
+       
         
         let collision = UICollisionBehavior(items: [view])
         collision.collisionDelegate = self
@@ -102,8 +115,9 @@ class ViewController: UIViewController, UICollisionBehaviorDelegate {
     
     func handlePan (gesture: UIPanGestureRecognizer) {
         
+      
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

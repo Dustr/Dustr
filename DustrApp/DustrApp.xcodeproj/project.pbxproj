@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1715A9AE1F3B5B24003B00AC /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1715A9AD1F3B5B24003B00AC /* SafariServices.framework */; };
 		255AC81636823508014E2DCA /* Pods_DustrApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA645AB4C15DBD84E3121E8 /* Pods_DustrApp.framework */; };
 		287224481F1C22E500D5B837 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2872244A1F1C22E500D5B837 /* LaunchScreen.xib */; };
 		2872244C1F1C23E200D5B837 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2872244B1F1C23E200D5B837 /* Images.xcassets */; };
@@ -41,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1715A9AC1F3A430C003B00AC /* Bridging_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridging_Header.h; sourceTree = "<group>"; };
+		1715A9AD1F3B5B24003B00AC /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		278A6F4D0CAD00D6EBC8ECD0 /* Pods-DustrApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DustrApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-DustrApp/Pods-DustrApp.release.xcconfig"; sourceTree = "<group>"; };
 		287224491F1C22E500D5B837 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		2872244B1F1C23E200D5B837 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -74,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1715A9AE1F3B5B24003B00AC /* SafariServices.framework in Frameworks */,
 				255AC81636823508014E2DCA /* Pods_DustrApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,6 +104,7 @@
 		6B058450A0B8F8EC9AD0841D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1715A9AD1F3B5B24003B00AC /* SafariServices.framework */,
 				4AA645AB4C15DBD84E3121E8 /* Pods_DustrApp.framework */,
 				F7D388CC9CE57A9D53F0FDAB /* Pods_DustrAppTests.framework */,
 				CB5C453461E72518302CEE6E /* Pods_DustrAppUITests.framework */,
@@ -142,6 +147,7 @@
 				287224511F1C295700D5B837 /* OverlayView.xib */,
 				2872244A1F1C22E500D5B837 /* LaunchScreen.xib */,
 				2872244B1F1C23E200D5B837 /* Images.xcassets */,
+				1715A9AC1F3A430C003B00AC /* Bridging_Header.h */,
 			);
 			path = DustrApp;
 			sourceTree = "<group>";
@@ -630,6 +636,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DustrApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = DustrApp/Bridging_Header.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -643,6 +650,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DustrApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = DustrApp/Bridging_Header.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

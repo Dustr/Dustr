@@ -2,14 +2,20 @@ PODS:
   - Koloda (4.1):
     - pop (~> 1.0)
   - pop (1.0.10)
+  - TwitterCore (3.0.0)
+  - TwitterKit (3.0.3):
+    - TwitterCore (>= 3.0.0)
 
 DEPENDENCIES:
   - Koloda
+  - TwitterKit
 
 SPEC CHECKSUMS:
   Koloda: 6c4fa3ce9a68776a8ef973311e53fdda432799a8
   pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
+  TwitterCore: 8ce250be1eb34633a0e6acc89520d4165ec52c10
+  TwitterKit: 202404be71aadd81d19f677b34579fe77d9cb67e
 
-PODFILE CHECKSUM: 24b172d3ed34f5fdfa73189127403740b9fa9369
+PODFILE CHECKSUM: 517aa70c73b50048ce814ff472b50ef848dbec41
 
 COCOAPODS: 1.2.1
